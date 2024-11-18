@@ -14,71 +14,146 @@
   font-family: "SohoGothicPro";
 }
 
+.section1,
+.section3,
+.section5 {
+  height: 736px;
+  background-size: cover;
+}
+
+.section1 {
+  background-image: url("../assets/images/waxed-bg1-m.webp");
+}
+.section3 {
+  background-image: url("../assets/images/waxed-bg3-m.webp");
+}
+.section5 {
+  background-image: url("../assets/images/waxed-bg5-m.webp");
+}
+
+/* color */
 .text-green {
   color: #8fc31f;
 }
 
+/* font-size */
+.fs-18px {
+  font-size: 18px;
+}
 .fs-36px {
   font-size: 36px;
 }
 
-.section3 {
-  background-size: cover;
-  background-image: url("../assets/images/waxed-bg3-m.webp");
-  height: 736px;
-}
-
+/* padding */
 .px-36px {
   padding-left: 36px;
   padding-right: 36px;
 }
-
 .pb-66px {
   padding-bottom: 66px;
 }
+.py-66px {
+  padding-top: 66px;
+  padding-bottom: 66px;
+}
+
+/* width */
+.w-150px {
+  width: 150px;
+}
 
 @media (min-width: 768px) {
-  .section3 {
-    background-image: url("../assets/images/waxed-bg3-t.webp");
+  .section1,
+  .section3,
+  .section5 {
     height: 768px;
   }
-
-  .md-flex-row {
-    flex-direction: row !important;
+  .section1 {
+    background-image: url("../assets/images/waxed-bg1-t.webp");
   }
-  
-  .md-w-50 {
+  .section3 {
+    background-image: url("../assets/images/waxed-bg3-t.webp");
+  }
+  .section5 {
+    background-image: url("../assets/images/waxed-bg5-t.webp");
+  }
+
+  /* md-text-align */
+  .md-text-end {
+    text-align: right !important;
+  }
+  .md-text-start {
+    text-align: left !important;
+  }
+
+  /* md-width */
+  .w-md-50 {
     width: 50%;
   }
+  .w-md-220px {
+    width: 220px;
+  }
 
+  /* md-margin */
   .md-my-auto {
     margin-top: auto;
     margin-bottom: auto;
   }
 
+  /* md-font-size */
   .fs-md-45px {
     font-size: 45px;
   }
   .fs-md-24px {
     font-size: 24px;
   }
+  .fs-md-35px {
+    font-size: 35px;
+  }
+
+  /* md-padding */
   .pt-md-236px {
     padding-top: 236px;
   }
+  .px-md-96px {
+    padding-left: 96px;
+    padding-right: 96px;
+  }
+  
 }
 
 @media (min-width: 1400px) {
+  .section1,
+  .section3,
+  .section5 {
+    height: 800px;
+  }
+  .section1 {
+    background-image: url("../assets/images/waxed-bg1.webp");
+  }
   .section3 {
     background-image: url("../assets/images/waxed-bg3.webp");
-    height: 800px;
+  }
+  .section5 {
+    background-image: url("../assets/images/waxed-bg5.webp");
   }
   .fs-xxl-55px {
     font-size: 55px;
+  }
+  .fs-xxl-40px {
+    font-size: 40px;
   }
   .fs-xxl-30px {
     font-size: 30px;
   }
   .pt-xxl-196px {
     padding-top: 196px;
+  }
+  .px-xxl-142px {
+    padding-left: 142px;
+    padding-right: 142px;
+  }
+  .w-xxl-250px {
+    width: 250px;
   }
 }
