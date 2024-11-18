@@ -16,6 +16,7 @@
 
 .section1,
 .section3,
+.section4,
 .section5 {
   height: 736px;
   background-size: cover;
@@ -26,6 +27,9 @@
 }
 .section3 {
   background-image: url("../assets/images/waxed-bg3-m.webp");
+}
+.section4 {
+  background-image: url("../assets/images/waxed-bg4-m.webp");
 }
 .section5 {
   background-image: url("../assets/images/waxed-bg5-m.webp");
@@ -65,6 +69,7 @@
 @media (min-width: 768px) {
   .section1,
   .section3,
+  .section4,
   .section5 {
     height: 768px;
   }
@@ -73,6 +78,9 @@
   }
   .section3 {
     background-image: url("../assets/images/waxed-bg3-t.webp");
+  }
+  .section4{
+    background-image: url("../assets/images/waxed-bg4-t.webp");
   }
   .section5 {
     background-image: url("../assets/images/waxed-bg5-t.webp");
@@ -125,6 +133,7 @@
 @media (min-width: 1400px) {
   .section1,
   .section3,
+  .section4,
   .section5 {
     height: 800px;
   }
@@ -133,6 +142,9 @@
   }
   .section3 {
     background-image: url("../assets/images/waxed-bg3.webp");
+  }
+  .section4 {
+    background-image: url("../assets/images/waxed-bg4.webp");
   }
   .section5 {
     background-image: url("../assets/images/waxed-bg5.webp");
