@@ -1,0 +1,40 @@
+@font-face {
+  font-family: "SohoGothicPro";
+  src: url("../assets/fonts/SohoGothicPro-Regular.otf") format("opentype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "SohoGothicPro";
+  src: url("../assets/fonts/SohoGothicPro-Medium.otf") format("opentype");
+  font-weight: 500;
+}
+
+.soho-gothic-pro {
+  font-family: "SohoGothicPro";
+}
+
+.text-green {
+  color: #8fc31f;
+}
+
+.fs-xxl-55px {
+  @media (min-width: 1400px) {
+    font-size: 55px;
+  }
+}
+
+.fs-md-45px {
+  @media (min-width: 768px) {
+    font-size: 45px;
+  }
+}
+
+.fs-36px {
+  font-size: 36px;
+}
+
+.section3 {
+  background-image: url("../assets/images/waxed-bg3.webp");
+  height: 800px;
+}
