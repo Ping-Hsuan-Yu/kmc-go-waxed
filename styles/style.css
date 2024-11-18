@@ -18,23 +18,67 @@
   color: #8fc31f;
 }
 
-.fs-xxl-55px {
-  @media (min-width: 1400px) {
-    font-size: 55px;
-  }
-}
-
-.fs-md-45px {
-  @media (min-width: 768px) {
-    font-size: 45px;
-  }
-}
-
 .fs-36px {
   font-size: 36px;
 }
 
 .section3 {
-  background-image: url("../assets/images/waxed-bg3.webp");
-  height: 800px;
+  background-size: cover;
+  background-image: url("../assets/images/waxed-bg3-m.webp");
+  height: 736px;
+}
+
+.px-36px {
+  padding-left: 36px;
+  padding-right: 36px;
+}
+
+.pb-66px {
+  padding-bottom: 66px;
+}
+
+@media (min-width: 768px) {
+  .section3 {
+    background-image: url("../assets/images/waxed-bg3-t.webp");
+    height: 768px;
+  }
+
+  .md-flex-row {
+    flex-direction: row !important;
+  }
+  
+  .md-w-50 {
+    width: 50%;
+  }
+
+  .md-my-auto {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .fs-md-45px {
+    font-size: 45px;
+  }
+  .fs-md-24px {
+    font-size: 24px;
+  }
+  .pt-md-236px {
+    padding-top: 236px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .section3 {
+    background-image: url("../assets/images/waxed-bg3.webp");
+    height: 800px;
+  }
+  .fs-xxl-55px {
+    font-size: 55px;
+  }
+  .fs-xxl-30px {
+    font-size: 30px;
+  }
+  .pt-xxl-196px {
+    padding-top: 196px;
+  }
 }
