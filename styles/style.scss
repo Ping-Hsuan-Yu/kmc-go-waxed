@@ -21,6 +21,7 @@ body {
 }
 
 .section1,
+.section2,
 .section3,
 .section4,
 .section5 {
@@ -37,7 +38,6 @@ body {
 @for $i from 1 through 5 {
     .section#{$i} {
         background-image: url("../assets/images/waxed-bg#{$i}-m.webp");
-        background-position: center;
         @media (min-width: 768px) {
             background-image: url("../assets/images/waxed-bg#{$i}-t.webp");
         }
@@ -46,14 +46,40 @@ body {
         }
     }
 }
+.section1 {
+    background-position: center;
+}
+.section2 {
+    background-position: center;
+}
+.section3 {
+    background-position: top left;
+    .logo {
+        top: -40px;
+        left: clamp(-230px, -12vw, 0px);
+    }
+}
+.section4 {
+    background-position: top left;
+}
+.section5 {
+    background-position: top right;
+}
+
+.product {
+    @media (max-width: 768px) {
+        object-fit: contain;
+        max-height: 437px;
+    }
+}
 
 .go-btn {
     background-image: url("../assets/images/go-btn-blue.webp");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    width: 180px;
-    height: 180px;
+    width: 160px;
+    height: 160px;
     transition:
         background-image 0.5s ease-in-out,
         transform 0.3s ease-in-out;
@@ -79,7 +105,9 @@ body {
 /* font-size */
 $font-sizes: (
     18px: 18px,
+    30px: 30px,
     36px: 36px,
+    45px: 45px,
     48px: 48px,
     80px: 80px
 );
@@ -90,8 +118,29 @@ $font-sizes: (
     }
 }
 
+@media (min-width: 768px) {
+    /* md-font-size */
+    $md-font-size: (
+        24px: 24px,
+        32px: 32px,
+        35px: 35px,
+        45px: 48px
+    );
+    @each $name, $size in $md-font-size {
+        .fs-md-#{$name} {
+            font-size: $size;
+        }
+    }
+}
+
 /* padding */
 $padding-sizes: (
+    "py-32px": (
+        32px,
+        0,
+        32px,
+        0
+    ),
     "px-36px": (
         0,
         36px,
@@ -161,18 +210,6 @@ $padding-sizes: (
         margin-bottom: auto;
     }
 
-    /* md-font-size */
-    $md-font-size: (
-        24px: 24px,
-        35px: 35px,
-        45px: 48px
-    );
-    @each $name, $size in $md-font-size {
-        .fs-md-#{$name} {
-            font-size: $size;
-        }
-    }
-
     /* md-padding */
     $md-padding-sizes: (
         "pt-md-236px": (
@@ -187,11 +224,11 @@ $padding-sizes: (
             0,
             96px
         ),
-        "px-md-140px": (
+        "ps-md-73vw": (
             0,
-            140px,
             0,
-            140px
+            0,
+            7.3vw
         )
     );
     @each $class, $values in $md-padding-sizes {
@@ -222,11 +259,20 @@ $padding-sizes: (
     .fs-xxl-55px {
         font-size: 55px;
     }
+    .fs-xxl-48px {
+        font-size: 48px;
+    }
     .fs-xxl-40px {
         font-size: 40px;
     }
     .fs-xxl-30px {
         font-size: 30px;
+    }
+    .fs-xxl-45px {
+        font-size: 45px;
+    }
+    .fs-xxl-80px {
+        font-size: 80px;
     }
 
     /* xxl-padding */
