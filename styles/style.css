@@ -139,7 +139,8 @@ body {
 
 @media (max-width: 768px) {
   .product {
-    object-fit: contain;
+    -o-object-fit: contain;
+       object-fit: contain;
     max-height: 437px;
   }
 }
@@ -300,7 +301,6 @@ body {
     gap: 54px;
   }
   .md\:animate__fadeInRight {
-    -webkit-animation-name: fadeInRight;
     animation-name: fadeInRight;
   }
 }
@@ -336,6 +336,4 @@ body {
   .w-xxl-250px {
     width: 250px;
   }
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
