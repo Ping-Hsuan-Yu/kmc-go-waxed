@@ -311,9 +311,6 @@ body {
 }
 
 @media (min-width: 768px) {
-  .section6-card {
-    width: 33.3333333333%;
-  }
   /* md-text-align */
   .md-text-end {
     text-align: right !important;
@@ -339,6 +336,11 @@ body {
   }
   .md\:animate__fadeInRight {
     animation-name: fadeInRight;
+  }
+}
+@media (min-width: 992px) {
+  .section6-card {
+    width: 33.3333333333%;
   }
 }
 @media (min-width: 1400px) {

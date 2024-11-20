@@ -117,10 +117,6 @@ body {
 }
 
 @media (min-width: 768px) {
-    .section6-card {
-        width: calc(100% / 3);
-    }
-
     /* md-text-align */
     .md-text-end {
         text-align: right !important;
@@ -151,6 +147,12 @@ body {
     .md\:animate__fadeInRight {
         -webkit-animation-name: fadeInRight;
         animation-name: fadeInRight;
+    }
+}
+
+@media (min-width: 992px) {
+    .section6-card {
+        width: calc(100% / 3);
     }
 }
 
