@@ -109,8 +109,10 @@ body {
 /* font-size */
 $font-sizes: (
     18px: 18px,
+    21px: 21px,
     30px: 30px,
     36px: 36px,
+    40px: 40px,
     45px: 45px,
     48px: 48px,
     80px: 80px
@@ -125,10 +127,13 @@ $font-sizes: (
 @media (min-width: 768px) {
     /* md-font-size */
     $md-font-size: (
+        21px: 21px,
         24px: 24px,
         32px: 32px,
         35px: 35px,
-        45px: 48px
+        40px: 40px,
+        45px: 45px,
+        48px: 48px
     );
     @each $name, $size in $md-font-size {
         .fs-md-#{$name} {
