@@ -1,7 +1,5 @@
-@use "sass:list";
-
-@import "./font-size.scss";
-@import "./padding.scss";
+@import "padding";
+@import "font-size";
 
 @font-face {
     font-family: "SohoGothicPro";
