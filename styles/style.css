@@ -306,6 +306,10 @@ body {
   width: 150px;
 }
 
+.gap-24px {
+  gap: 24px;
+}
+
 @media (min-width: 768px) {
   .section6-card {
     width: 33.3333333333%;

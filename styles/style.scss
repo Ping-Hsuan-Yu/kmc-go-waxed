@@ -112,6 +112,10 @@ body {
     width: 150px;
 }
 
+.gap-24px {
+    gap: 24px;
+}
+
 @media (min-width: 768px) {
     .section6-card {
         width: calc(100% / 3);
