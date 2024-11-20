@@ -1,0 +1,43 @@
+/* padding */
+.py-32px {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.px-36px {
+  padding-right: 36px;
+  padding-left: 36px;
+}
+
+.pb-66px {
+  padding-bottom: 66px;
+}
+
+.py-66px {
+  padding-top: 66px;
+  padding-bottom: 66px;
+}
+
+@media (min-width: 768px) {
+  /* md-padding */
+  .pt-md-236px {
+    padding-top: 236px;
+  }
+  .px-md-96px {
+    padding-right: 96px;
+    padding-left: 96px;
+  }
+  .ps-md-73vw {
+    padding-left: 7.3vw;
+  }
+}
+@media (min-width: 1400px) {
+  /* xxl-padding */
+  .pt-xxl-196px {
+    padding-top: 196px;
+  }
+  .px-xxl-142px {
+    padding-left: 142px;
+    padding-right: 142px;
+  }
+}/*# sourceMappingURL=padding.css.map */

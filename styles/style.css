@@ -1,3 +1,46 @@
+/* padding */
+.py-32px {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.px-36px {
+  padding-right: 36px;
+  padding-left: 36px;
+}
+
+.pb-66px {
+  padding-bottom: 66px;
+}
+
+.py-66px {
+  padding-top: 66px;
+  padding-bottom: 66px;
+}
+
+@media (min-width: 768px) {
+  /* md-padding */
+  .pt-md-236px {
+    padding-top: 236px;
+  }
+  .px-md-96px {
+    padding-right: 96px;
+    padding-left: 96px;
+  }
+  .ps-md-73vw {
+    padding-left: 7.3vw;
+  }
+}
+@media (min-width: 1400px) {
+  /* xxl-padding */
+  .pt-xxl-196px {
+    padding-top: 196px;
+  }
+  .px-xxl-142px {
+    padding-left: 142px;
+    padding-right: 142px;
+  }
+}
 @font-face {
   font-family: "SohoGothicPro";
   src: url("../assets/fonts/SohoGothicPro-Regular.otf") format("opentype");
@@ -237,26 +280,6 @@ body {
     font-size: 48px;
   }
 }
-/* padding */
-.py-32px {
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-
-.px-36px {
-  padding-right: 36px;
-  padding-left: 36px;
-}
-
-.pb-66px {
-  padding-bottom: 66px;
-}
-
-.py-66px {
-  padding-top: 66px;
-  padding-bottom: 66px;
-}
-
 /* width */
 .w-150px {
   width: 150px;
@@ -285,17 +308,6 @@ body {
     margin-top: auto;
     margin-bottom: auto;
   }
-  /* md-padding */
-  .pt-md-236px {
-    padding-top: 236px;
-  }
-  .px-md-96px {
-    padding-right: 96px;
-    padding-left: 96px;
-  }
-  .ps-md-73vw {
-    padding-left: 7.3vw;
-  }
   /* md-gap */
   .gap-md-54px {
     gap: 54px;
@@ -323,14 +335,6 @@ body {
   }
   .fs-xxl-80px {
     font-size: 80px;
-  }
-  /* xxl-padding */
-  .pt-xxl-196px {
-    padding-top: 196px;
-  }
-  .px-xxl-142px {
-    padding-left: 142px;
-    padding-right: 142px;
   }
   /* xxl-width */
   .w-xxl-250px {
