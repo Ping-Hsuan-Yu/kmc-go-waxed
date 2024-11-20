@@ -144,6 +144,10 @@ body {
   }
 }
 
+.text-center {
+  text-align: center;
+}
+
 .go-btn {
   background-image: url("../assets/images/go-btn-blue.webp");
   background-size: contain;
@@ -277,6 +281,10 @@ body {
   /* md-gap */
   .gap-md-54px {
     gap: 54px;
+  }
+  .md\:animate__fadeInRight {
+    -webkit-animation-name: fadeInRight;
+    animation-name: fadeInRight;
   }
 }
 @media (min-width: 1400px) {
