@@ -299,6 +299,10 @@ body {
   .gap-md-54px {
     gap: 54px;
   }
+  .md\:animate__fadeInRight {
+    -webkit-animation-name: fadeInRight;
+    animation-name: fadeInRight;
+  }
 }
 @media (min-width: 1400px) {
   /* xxl-font-size */
