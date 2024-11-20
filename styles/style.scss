@@ -1,4 +1,5 @@
-@use "sass:list";
+@import "padding";
+@import "font-size";
 
 @font-face {
     font-family: "SohoGothicPro";
@@ -106,97 +107,16 @@ body {
     color: #8fc31f;
 }
 
-/* font-size */
-$font-sizes: (
-    18px: 18px,
-    21px: 21px,
-    30px: 30px,
-    36px: 36px,
-    40px: 40px,
-    45px: 45px,
-    48px: 48px,
-    80px: 80px
-);
-
-@each $name, $size in $font-sizes {
-    .fs-#{$name} {
-        font-size: $size;
-    }
-}
-
-@media (min-width: 768px) {
-    /* md-font-size */
-    $md-font-size: (
-        21px: 21px,
-        24px: 24px,
-        32px: 32px,
-        35px: 35px,
-        40px: 40px,
-        45px: 45px,
-        48px: 48px
-    );
-    @each $name, $size in $md-font-size {
-        .fs-md-#{$name} {
-            font-size: $size;
-        }
-    }
-}
-
-/* padding */
-$padding-sizes: (
-    "py-32px": (
-        32px,
-        0,
-        32px,
-        0
-    ),
-    "px-36px": (
-        0,
-        36px,
-        0,
-        36px
-    ),
-    "pb-66px": (
-        0,
-        0,
-        66px,
-        0
-    ),
-    "py-66px": (
-        66px,
-        0,
-        66px,
-        0
-    )
-);
-
-@each $class, $values in $padding-sizes {
-    .#{$class} {
-        @if list.nth($values, 1) != 0 {
-            padding-top: list.nth($values, 1);
-        }
-        @if list.nth($values, 2) != 0 {
-            padding-right: list.nth($values, 2);
-        }
-        @if list.nth($values, 3) != 0 {
-            padding-bottom: list.nth($values, 3);
-        }
-        @if list.nth($values, 4) != 0 {
-            padding-left: list.nth($values, 4);
-        }
-    }
-}
-
 /* width */
 .w-150px {
     width: 150px;
 }
 
-@media (min-width: 768px) {
-    .section6-card {
-        width: calc(100% / 3);
-    }
+.gap-24px {
+    gap: 24px;
+}
 
+@media (min-width: 768px) {
     /* md-text-align */
     .md-text-end {
         text-align: right !important;
@@ -219,44 +139,6 @@ $padding-sizes: (
         margin-bottom: auto;
     }
 
-    /* md-padding */
-    $md-padding-sizes: (
-        "pt-md-236px": (
-            236px,
-            0,
-            0,
-            0
-        ),
-        "px-md-96px": (
-            0,
-            96px,
-            0,
-            96px
-        ),
-        "ps-md-73vw": (
-            0,
-            0,
-            0,
-            7.3vw
-        )
-    );
-    @each $class, $values in $md-padding-sizes {
-        .#{$class} {
-            @if list.nth($values, 1) != 0 {
-                padding-top: list.nth($values, 1);
-            }
-            @if list.nth($values, 2) != 0 {
-                padding-right: list.nth($values, 2);
-            }
-            @if list.nth($values, 3) != 0 {
-                padding-bottom: list.nth($values, 3);
-            }
-            @if list.nth($values, 4) != 0 {
-                padding-left: list.nth($values, 4);
-            }
-        }
-    }
-
     /* md-gap */
     .gap-md-54px {
         gap: 54px;
@@ -268,55 +150,15 @@ $padding-sizes: (
     }
 }
 
-@media (min-width: 1400px) {
-    /* xxl-padding */
-    .pt-xxl-196px {
-        padding-top: 196px;
-    }
-    .px-xxl-142px {
-        padding-left: 142px;
-        padding-right: 142px;
-    }
-
-    /* xxl-width */
-    .w-xxl-250px {
-        width: 250px;
+@media (min-width: 992px) {
+    .section6-card {
+        width: calc(100% / 3);
     }
 }
 
-// @media (min-width: 1400px) {
-//     /* xxl-font-size */
-//     .fs-xxl-55px {
-//         font-size: 55px;
-//     }
-//     .fs-xxl-48px {
-//         font-size: 48px;
-//     }
-//     .fs-xxl-40px {
-//         font-size: 40px;
-//     }
-//     .fs-xxl-30px {
-//         font-size: 30px;
-//     }
-//     .fs-xxl-45px {
-//         font-size: 45px;
-//     }
-//     .fs-xxl-80px {
-//         font-size: 80px;
-//     }}
 @media (min-width: 1400px) {
-    $xxl-font-sizes: (
-        "80px": 80px,
-        "55px": 55px,
-        "48px": 48px,
-        "45px": 45px,
-        "40px": 40px,
-        "30px": 30px
-    );
-
-    @each $class, $values in $xxl-font-sizes {
-        .fs-xxl-#{$class}px {
-            font-size: $values;
-        }
+    /* xxl-width */
+    .w-xxl-250px {
+        width: 250px;
     }
 }

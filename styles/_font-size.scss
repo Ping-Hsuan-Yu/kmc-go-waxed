@@ -1,0 +1,28 @@
+/* font-size */
+$font-sizes: (18, 21, 30, 36, 40, 45, 48, 80);
+
+@each $size in $font-sizes {
+    .fs-#{$size}px {
+        font-size: #{$size}px;
+    }
+}
+
+/* md-font-size */
+@media (min-width: 768px) {
+    $md-font-size: (21, 24, 32, 35, 40, 45, 48);
+    @each $size in $md-font-size {
+        .fs-md-#{$size}px {
+            font-size: #{$size}px;
+        }
+    }
+}
+
+/* xxl-font-size */
+@media (min-width: 1400px) {
+    $xxl-font-size: (30 ,40, 45, 48, 55, 80);
+    @each $size in $xxl-font-size {
+        .fs-xxl-#{$size}px {
+            font-size: #{$size}px;
+        }
+    }
+}
