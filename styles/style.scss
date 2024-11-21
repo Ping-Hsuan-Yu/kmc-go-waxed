@@ -118,10 +118,10 @@ body {
 
 @media (min-width: 768px) {
     /* md-text-align */
-    .md-text-end {
+    .text-md-end {
         text-align: right !important;
     }
-    .md-text-start {
+    .text-md-start {
         text-align: left !important;
     }
 
@@ -134,7 +134,7 @@ body {
     }
 
     /* md-margin */
-    .md-my-auto {
+    .my-md-auto {
         margin-top: auto;
         margin-bottom: auto;
     }
