@@ -260,8 +260,7 @@ body {
 
 @media (max-width: 768px) {
   .product {
-    -o-object-fit: contain;
-       object-fit: contain;
+    object-fit: contain;
     max-height: 437px;
   }
 }
@@ -312,10 +311,10 @@ body {
 
 @media (min-width: 768px) {
   /* md-text-align */
-  .md-text-end {
+  .text-md-end {
     text-align: right !important;
   }
-  .md-text-start {
+  .text-md-start {
     text-align: left !important;
   }
   /* md-width */
@@ -326,7 +325,7 @@ body {
     width: 220px;
   }
   /* md-margin */
-  .md-my-auto {
+  .my-md-auto {
     margin-top: auto;
     margin-bottom: auto;
   }
@@ -335,6 +334,7 @@ body {
     gap: 54px;
   }
   .md\:animate__fadeInRight {
+    -webkit-animation-name: fadeInRight;
     animation-name: fadeInRight;
   }
 }
@@ -348,4 +348,6 @@ body {
   .w-xxl-250px {
     width: 250px;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
